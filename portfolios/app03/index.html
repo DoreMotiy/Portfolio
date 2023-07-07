@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>割り勘計算</title>
+        <!-- CSS -->
+        <link class="pagestylesheet" rel="stylesheet" href="./css/default.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>割り勘計算</h1>
+            <div class="screen">
+                <div class="amount_group">
+                    <p class="title">合計金額</p>
+                    <input class="amount" type="text" placeholder="数字を入力してください" />
+                </div>
+                <div class="people_group">
+                    <p class="title">合計人数</p>
+                    <input class="people" type="text" placeholder="数字を入力してください" />
+                </div>
+                <div class="unit_group">
+                    <p class="title">単位</p>
+                    <input class="unit" type="text" placeholder="数字を入力してください" />
+                </div>
+                <div class="enough_group">
+                    <p class="title">計算方法切替</p>
+                    <button class="enough">少なめに支払う</button>
+                </div>
+                <div class="tax_group">
+                    <p class="title">消費税切替</p>
+                    <button class="tax">税抜</button>
+                </div>
+                <div class="extravagance_group">
+                    <p class="title">奢りモード切替</p>
+                    <button class="extravagance">通常</button>
+                </div>
+                <div class="female_people_group">
+                    <p class="title">人数(優遇)</p>
+                    <input class="female_people" type="text" placeholder="数字を入力してください" />
+                </div>
+                <div class="female_magnification_group">
+                    <p class="title">倍率(n倍)</p>
+                    <input class="female_magnification" type="text" placeholder="数字を入力してください" />
+                </div>
+                <div class="female_payment_group">
+                    <p class="title">支払い額</p>
+                    <input class="female_payment" type="text" />
+                </div>
+                <div class="execution_group">
+                    <p class="title">計算</p>
+                    <button class="execution">計算</button>
+                </div>
+                <div class="payment_group">
+                    <p class="title">支払い額</p>
+                    <input class="payment" type="text" />
+                </div>
+                <div class="compensation_group">
+                    <p class="title">不足</p>
+                    <input class="compensation" type="text" />
+                </div>
+            </div>
+        </div>
+        <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>

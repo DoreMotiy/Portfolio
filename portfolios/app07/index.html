@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="./images/favicon.ico" />
+        <link rel="stylesheet" href="./custom.css" />
+        <title>聖遺物生成/強化</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="result">
+                <div class="upper">
+                    <h5 class="artifact"></h5>
+                    <h6 class="main_op_name"></h6>
+                    <h2 class="main_op_value"></h2>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="lower">
+                    <div class="level">+0</div>
+                    <ul class="sub_op">
+                        <li class="sub_op_0"></li>
+                        <li class="sub_op_1"></li>
+                        <li class="sub_op_2"></li>
+                        <li class="sub_op_3"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="generate"><span class="lock">&#x1F511;</span>報酬受取</button>
+                <button class="enhance"><span class="circle">&emsp;&nbsp;</span>強化</button>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+        <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>

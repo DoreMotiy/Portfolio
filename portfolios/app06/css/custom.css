@@ -1,0 +1,20 @@
+.container {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #cff;
+}
+
+.container .row {
+    display: flex;
+    align-items: flex-end;
+}
+
+.result {
+    margin-left: 30px;
+}
+
+input,
+button {
+    height: 30px;
+}

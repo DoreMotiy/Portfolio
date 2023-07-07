@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="./images/favicon.ico" />
+        <title>WeatherApp</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/custom.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="w_main">
+                <div class="main_1">
+                    <h1 class="area_name"></h1>
+                </div>
+                <div class="main_2">
+                    <img class="w_icon" src="" alt="" />
+                </div>
+                <div class="main_3">
+                    <p class="temp_min"></p>
+                    <p class="temp_max"></p>
+                </div>
+            </div>
+            <div class="w_after">
+                <table>
+                    <tr class="head">
+                        <td class="date"></td>
+                        <td class="pop">降水確率</td>
+                        <td class="w_icon"></td>
+                        <td class="temp_min">L</td>
+                        <td class="temp_max">H</td>
+                    </tr>
+                    <tr class="day_1">
+                        <td class="date"></td>
+                        <td class="pop"></td>
+                        <td class="w_icon"><img src="" alt="" /></td>
+                        <td class="temp_min"></td>
+                        <td class="temp_max"></td>
+                    </tr>
+                    <tr class="day_2">
+                        <td class="date"></td>
+                        <td class="pop"></td>
+                        <td class="w_icon"><img src="" alt="" /></td>
+                        <td class="temp_min"></td>
+                        <td class="temp_max"></td>
+                    </tr>
+                    <tr class="day_3">
+                        <td class="date"></td>
+                        <td class="pop"></td>
+                        <td class="w_icon"><img src="" alt="" /></td>
+                        <td class="temp_min"></td>
+                        <td class="temp_max"></td>
+                    </tr>
+                    <tr class="day_4">
+                        <td class="date"></td>
+                        <td class="pop"></td>
+                        <td class="w_icon"><img src="" alt="" /></td>
+                        <td class="temp_min"></td>
+                        <td class="temp_max"></td>
+                    </tr>
+                    <tr class="day_5">
+                        <td class="date"></td>
+                        <td class="pop"></td>
+                        <td class="w_icon"><img src="" alt="" /></td>
+                        <td class="temp_min"></td>
+                        <td class="temp_max"></td>
+                    </tr>
+                    <tr class="day_6">
+                        <td class="date"></td>
+                        <td class="pop"></td>
+                        <td class="w_icon"><img src="" alt="" /></td>
+                        <td class="temp_min"></td>
+                        <td class="temp_max"></td>
+                    </tr>
+                </table>
+            </div>
+            <footer class="footer">
+                <p>画像アイコン:<a href="https://mamewaza.com/tools/weather.html">まめわざ</a>様の画像を編集</p>
+                <p>天気情報:<a href="https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=210000">気象庁</a>より</p>
+            </footer>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="//cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+        <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+div.container {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #cff;
+}
+
+div.container h1 {
+    text-align: center;
+}
+
+div.container div.screen {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+div.screen div input {
+    width: calc(200px - 8px);
+    height: calc(100px - 22px);
+    text-align: center;
+    font-weight: bold;
+}
+
+div.screen div p {
+    margin: 0;
+    padding: 0;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+div.screen div button {
+    width: 200px;
+    height: calc(100px - 16px);
+}
+
+div.screen div.amount_group {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+div.screen div.people_group {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+div.screen div.unit_group {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+div.screen div.enough_group {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+div.screen div.tax_group {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+div.screen div.extravagance_group {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+div.screen div.female_people_group {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+div.screen div.female_magnification_group {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+div.screen div.female_payment_group {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+div.screen div.execution_group {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+div.screen div.payment_group {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+div.screen div.compensation_group {
+    grid-column: 4;
+    grid-row: 3;
+}

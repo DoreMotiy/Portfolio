@@ -1,0 +1,47 @@
+.container {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #cff;
+}
+
+.board {
+    border: 1px solid black;
+}
+
+.boardRow {
+    display: flex;
+}
+
+.boardCell {
+    width: calc(50px - 2px);
+    height: calc(50px - 2px);
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    outline: 0;
+}
+
+.other {
+    display: flex;
+    margin-top: 20px;
+}
+
+.btns {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns button {
+    width: 45%;
+    height: 40px;
+}
+
+.result {
+    padding-left: 25px;
+    font-size: 24px;
+}

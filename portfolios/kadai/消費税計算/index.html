@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>消費税計算</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="./libs/bootstrap/carousel.css" />
+    </head>
+    <body>
+        <div class="container bg-light text-center p-3" style="width: fit-content">
+            <h1 class="h1 my-5">消費税計算</h1>
+            <div>
+                <h4 class="h4">税抜き価格を入力</h4>
+                <div class="input-group my-3 mx-auto" style="max-width: 300px">
+                    <input type="number" id="before-price" class="form-control" placeholder="数字を入力" style="text-align: right" />
+                    <span class="input-group-text">円</span>
+                </div>
+                <div class="d-flex justify-content-between my-3 mx-auto" style="width: 300px">
+                    <p>消費税率</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="tax-radio" id="tax-10" checked />
+                        <label class="form-check-label" for="tax-10"> 10% </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="tax-radio" id="tax-8" />
+                        <label class="form-check-label" for="tax-8"> 8%</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="tax-radio" id="tax-other" />
+                        <label class="form-check-label" for="tax-other"> その他</label>
+                    </div>
+                </div>
+                <div id="tax-other-form" class="collapse">
+                    <div class="input-group my-3 mx-auto" style="max-width: 300px">
+                        <input type="number" id="input-tax" class="form-control" style="text-align: right" />
+                        <span class="input-group-text">%</span>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary my-3" id="calc-tax">計算する</button>
+                <div class="input-group my-3 mx-auto" style="max-width: 300px">
+                    <span class="input-group-text">税込</span>
+                    <input type="text" id="after-price" class="form-control" style="text-align: right" readonly />
+                    <span class="input-group-text">円</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+        <script src="./libs/bootstrap/bootstrap.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
